@@ -1,5 +1,4 @@
 discord.py==2.3.1
-time
 random
 asyncio
 requests
