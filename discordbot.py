@@ -1,4 +1,5 @@
 import discord, time, random, asyncio, requests
+import os
 
 intents = discord.Intents.default()
 intents.typing = False
@@ -181,5 +182,5 @@ async def on_message(message):
     f.close()
     print(ID, cmd)
 
-
-client.run("MTEzNDc0NDI0ODQ0NTU3OTQyNA.GXum3G.luv59EShPcZq3uH4Hl-Ere2DGiMA6xS9ZkX5Qc")
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
